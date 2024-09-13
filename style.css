@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+body{
+    margin: 0%;
+    font-family: Montserrat;
+    font-size: 20px;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+
+/* nav */
+nav{
+    background-color: #fff;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    gap: 5vw;
+    flex-direction: row; 
+    height: 10vh;
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    user-select: none;
+}
+
+.img-logo{
+    width: 10vw;
+    height: 10vh;
+    margin: auto;
+    transition: all 0.8s ease-out;
+}
+
+.img-logo:hover{
+    scale:1.1;
+}
+
+.nav-list{
+    display: flex; 
+    gap: 0 30px;
+    text-align: center;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+    
+}
+
+.list-nav{
+    list-style: none;
+    align-items: center;
+    transition: all 0.4s ease;
+    user-select: none;
+}
+
+.list-nav:hover{
+    color: #323893;
+    font-weight: 600;
+}
+
+.show{
+  display: none;
+  list-style: none;
+    align-items: center;
+    transition: all 0.4s ease;
+    background-color: #fff;
+    padding-left: 10px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+#show-hover:hover >.show{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+#show-hover{
+  cursor: pointer;
+}
+
+.show-list{
+  transition: all 0.4s ease-in-out;
+}
+
+.show-list:hover{
+  color: #323893;
+  font-weight: 600;
+}
+
+.icons-contac{
+    margin: auto 30px;    
+}
+
+
+/*  MAIN  */
+
+main{
+    margin-top: 5px;
+    width: 98vw;
+    height: 50vh;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100vw;
+  position: relative;
+  margin: 0;
+}
+
+.Banner-one{
+  width:100vw;
+  height: 100vh;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: transparent;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+div>h1{
+    font-weight: 400;
+    font-size: 34px;
+    margin: 0;
+}
+
+
+/*   Main- Hoteles-Tela   */
+
+h1{
+  padding-left: 25px;
+  font-size: 50px;
+  padding-top: 15px;
+  text-decoration: underline #323893;
+}
+
+h2{
+  padding-left: 25px;
+  color: #f6b735;
+  padding-top: 15px;
+}
+
+
+
+.container-hoteltela{
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hoteltela-img{
+  margin: auto;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button-coti{
+  border: 2px solid #323893;
+  padding: 2px 10px;
+  border-radius: 10px;
+  color: #f6b735;
+  background-color: #323893 ;
+  text-align: center;
+}
+
+.img-telahotel{
+  width:30vw;
+  height:60vh;
+}
+
+.name-hoteltela{
+  padding: 0;
+  margin: 0;
+}
+
+.promo-hotel{
+  width: 100svw;
+  height: 60svh;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/*     Hover Info Img      */
+
+/* Asegúrate de que el contenedor de la imagen tenga una posición relativa */
+.image-container {
+  position: relative;
+  display: inline-block; /* Opcional: Ajusta el tamaño del contenedor al tamaño de la imagen */
+}
+
+/* La imagen se mostrará normalmente */
+.image-container img {
+  display: block; /* Elimina espacios inferiores por defecto */
+  width: 30vw; /* Ajusta al tamaño del contenedor o imagen */
+  height: 40svh; /* Mantén la proporción de la imagen */
+}
+
+/* La capa de información cubre la imagen y está oculta por defecto */
+.info-overlay {
+  position: absolute;
+  bottom: 0; /* Alinea al fondo del contenedor */
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, #000,transparent); /* Fondo oscuro con opacidad */
+  color: white; /* Color del texto */
+  text-align: right; /* Centra el texto */
+  padding: 10px;
+  opacity: 0; /* Comienza invisible */
+  transition: opacity 0.5s ease; /* Transición suave para la opacidad del texto */
+}
+
+/* Muestra la capa de información y aplica la transición de opacidad al pasar el mouse sobre el contenedor */
+.image-container:hover .info-overlay {
+  opacity: 1; /* Hacemos visible la capa */
+}
+
+.fondo-tela{
+  background-image: url(img/640-tansparent-of-sea-water-surface-texture-background.jpg);
+}
+
+.fondo-roatan{
+  background-image: url(img/orilla.png);
+  height: 120svh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+/*  TABLETS RESPONSIVE  */
+
+@media (max-width: 768px) {
+  body {
+      font-size: 17px;
+  }
+
+  nav{
+    justify-content: center;
+    height: 13vh;
+  }
+
+  .img-logo{
+    width: 19vw;
+    height: 12vh;
+    transition: none;
+  }
+
+  .icons-contac{
+    display: none;
+  }
+
+  .name-hoteltela{
+    height: 10svh;
+    width: 30vw;
+  }
+ 
+/* MAIN */
+
+.promo-hotel{
+  height: 45svh;
+  width: 100vw;
+  overflow-x: scroll;
+}
+.Banner-one{
+  height: 60svh;
+}
+
+.promo-hotel>h1{
+  font-size: 35px;
+}
+
+.hoteltela-img{
+  width: auto;
+  height: 40svh;
+  
+}
+
+.container-hoteltela{
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 40svh;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 100vw;
+  overflow: scroll;
+}
+
+h2{
+  padding: 15px 0px;
+  margin: 0;
+  padding-left: 25px;
+}
+
+h1{
+  padding-bottom: 20px;
+  margin: 0%;
+}
+
+.img-telahotel{
+  height: 35svh;
+}
+
+.image-container img {
+  display: block; /* Elimina espacios inferiores por defecto */
+  width: 30vw; /* Ajusta al tamaño del contenedor o imagen */
+  height: 20svh; /* Mantén la proporción de la imagen */
+}
+
+.image-container:hover .info-overlay {
+  display: none;
+}
+
+.h3-container{
+  height: 15svh;
+}
+
+.fondo-roatan{
+  background-image: url(img/orilla.png);
+  /* height: 120svh; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+}
+
+/*   MOBILE RESPONSIVE   */
+
+@media (max-width: 480px) {
+  body {
+      font-size: 12px;
+  }
+
+   /* nav bar */
+
+   nav{
+    justify-content: center;
+    height: 6vh;
+  }
+
+  .img-logo{
+    width: 15vw;
+    height: 5vh;
+  }
+
+  .icons-contac{
+    display: none;
+  }
+
+  /* img */
+  /* MAIN */
+
+  .promo-hotel{
+    margin-top: 10px;
+    height: 38svh;
+    width: 100vw;
+    overflow-x: scroll;
+  }
+  .Banner-one{
+    height: 25svh;
+  }
+
+  .promo-hotel>h1{
+    font-size: 35px;
+  }
+
+  .hoteltela-img{
+    width: auto;
+    height: 35svh;
+    align-items: center;
+  }
+
+  .container-hoteltela{
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 35svh;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+
+  h2{
+    padding: 0;
+    margin: 0;
+    padding-left: 25px;
+  }
+
+  h1{
+    padding-bottom: 20px;
+  }
+
+  .img-telahotel{
+    height: 10svh;
+  }
+
+  .image-container img {
+    display: block; /* Elimina espacios inferiores por defecto */
+    width: 35vw; /* Ajusta al tamaño del contenedor o imagen */
+    height: 18svh; /* Mantén la proporción de la imagen */
+  }
+  
+  .image-container:hover .info-overlay {
+    display: none;
+  }
+  
+  .h3-container{
+    height: 8svh;
+  }
+
+  .fondo-roatan{
+    background-image: url(img/orilla.png);
+    height: 35svh;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+  }
+}
