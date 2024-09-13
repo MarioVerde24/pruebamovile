@@ -465,7 +465,7 @@ h1{
   }
 
   h2{
-    padding: 0;
+    padding: 10px 0px;
     margin: 0;
     padding-left: 25px;
   }
@@ -494,7 +494,7 @@ h1{
 
   .fondo-roatan{
     background-image: url(img/orilla.png);
-    height: 35svh;
+    height: 40svh;
     /* background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
